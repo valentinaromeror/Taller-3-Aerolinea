@@ -60,13 +60,10 @@ public class PersistenciaTiquetesJson implements IPersistenciaTiquetes
     {
         JSONObject jobject = new JSONObject( );
 
-        // Salvar clientes
         salvarClientes( aerolinea, jobject );
 
-        // Salvar tiquetes
         salvarTiquetes( aerolinea, jobject );
 
-        // Escribir la estructura JSON en un archivo
         PrintWriter pw = new PrintWriter( archivo );
         jobject.write( pw, 2, 0 );
         pw.close( );

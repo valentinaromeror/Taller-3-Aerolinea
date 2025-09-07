@@ -7,12 +7,12 @@ import uniandes.dpoo.aerolinea.exceptions.AeropuertoDuplicadoException;
 
 public class Aeropuerto {
 	
-    public static final int RADIO_TERRESTRE = 6371; // km
+    public static final int RADIO_TERRESTRE = 6371; 
     private static final Set<String> codigosUsados = new HashSet<>();
 
     private final String nombre;
-    private final String codigo;       // ej. "BOG"
-    private final String nombreCiudad; // ej. "Bogotá"
+    private final String codigo;  
+    private final String nombreCiudad;
     private final double latitud;
     private final double longitud;
 

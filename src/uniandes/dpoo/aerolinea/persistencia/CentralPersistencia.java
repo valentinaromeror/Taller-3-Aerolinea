@@ -9,7 +9,7 @@ public final class CentralPersistencia {
     public static IPersistenciaAerolinea getPersistenciaAerolinea(String tipoArchivo)
             throws TipoInvalidoException {
         if (PLAIN.equalsIgnoreCase(tipoArchivo)) {
-            return new PersistenciaAerolineaPlaintext(); // stub del taller
+            return new PersistenciaAerolineaPlaintext(); 
         }
         throw new TipoInvalidoException("Tipo de archivo inválido/no soportado para aerolínea: " + tipoArchivo);
     }
