@@ -1,0 +1,14 @@
+# Eclipse
+.project
+.classpath
+.settings/
+# macOS
+.DS_Store
+# Java builds
+bin/
+target/
+out/
+# Gradle/Maven
+.gradle/
+build/
+*.log
